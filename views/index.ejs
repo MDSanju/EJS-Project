@@ -24,13 +24,19 @@
         </form>
 
         <ul>
-            <% if (pLNames!==undefined ) { %>
-                <li>
+            <% if (pLNames.length> 0) { %>
+                <!-- <li>
                     <%= pLNames[pLNames.length - 1] %>
-                </li>
-                <% } else { %>
-                    <p>No data found!</p>
+                </li> -->
+
+                <% for (let x=0; x < pLNames.length; x++) { %>
+                    <li>
+                        <%= pLNames[x] %>
+                    </li>
                     <% } %>
+                        <% } else { %>
+                            <p>No data found!</p>
+                            <% } %>
         </ul>
     </main>
     <footer>
