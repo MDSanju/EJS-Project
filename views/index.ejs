@@ -9,7 +9,29 @@
 </head>
 
 <body>
-    <h1>Welcome to EJS!</h1>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">HOME</a></li>
+                <li><a href="/contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="/" method="post">
+            <input type="text" name="programmingLanguage" placeholder="Programming Language">
+            <button type="submit">Add Language</button>
+        </form>
+
+        <ul>
+            <li>
+                <%= pLNames %>
+            </li>
+        </ul>
+    </main>
+    <footer>
+        <p>Copyright &copy; San Sanju 2022!</p>
+    </footer>
 </body>
 
 </html>
