@@ -13,6 +13,10 @@ app.get("/", (req, res) => {
   res.render("index", { pLNames: prommingLanguages });
 });
 
+app.get("/contact", (req, res) => {
+  res.render("contact", {});
+});
+
 app.post("/", (req, res) => {
   const programmingLanguage = req.body.programmingLanguage;
   prommingLanguages.push(programmingLanguage);
