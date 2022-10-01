@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    min-height: 5vh;
+    background-color: blueviolet;
+}
+
+nav ul li {
+    margin: 0 1rem;
+    padding: 1rem;
+    transition: all 0.3s;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    background-color: steelblue;
+    color: #fff;
+}
+
+.lists {
+    width: 300px;
+    background-color: white;
+    color: #333;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.lists:hover {
+    background-color: steelblue;
+    color: #fff;
+}
+
+main {
+    min-height: 90vh;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+input {
+    width: 280px;
+    color: #333;
+    border: 1px solid grey;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    outline: none;
+}
+
+button {
+    border: 1px solid #fff;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: orangered;
+    color: cornsilk;
+    transition: all 0.1s;
+}
+
+button:hover {
+    background-color: #4dda12;
+}
+
+main ul li {
+    background-color: white;
+    margin: 0.5rem 0;
+    width: 20rem;
+    padding: 0.5rem;
+    transition: all 0.3s;
+}
+
+main ul li:hover {
+    background-color: orangered;
+    color: white;
+}
+
+footer {
+    min-height: 5vh;
+    background-color: blueviolet;
+    color: aliceblue;
+    text-align: center;
+}

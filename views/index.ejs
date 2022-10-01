@@ -1,8 +1,8 @@
 <%- include("layout/header") %>
     <main>
         <form action="/" method="post">
-            <input type="text" name="programmingLanguage" placeholder="Programming Language">
-            <button type="submit">Add Language</button>
+            <input type="text" name="programmingLanguage" placeholder="Programming Language" required>
+            <button type="submit">Add</button>
         </form>
 
         <ul>
@@ -12,12 +12,12 @@
                 </li> -->
 
                 <% for (let x=0; x < pLNames.length; x++) { %>
-                    <li>
+                    <div class="lists">
                         <%= pLNames[x] %>
-                    </li>
+                    </div>
                     <% } %>
                         <% } else { %>
-                            <p>No data found!</p>
+                            <p style="color: white;margin: 1rem;">No data found!</p>
                             <% } %>
         </ul>
     </main>

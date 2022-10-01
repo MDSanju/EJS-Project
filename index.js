@@ -3,6 +3,7 @@ const app = express()
 const port = 5000
 
 app.use(express.urlencoded({ extended: true }));
+app.use(express.static("public"));
 
 // EJS Setup
 app.set("view engine", "ejs");
